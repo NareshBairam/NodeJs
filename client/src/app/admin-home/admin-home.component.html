@@ -1,0 +1,10 @@
+<div>
+  <div>
+      <button type="button" (click)="logout()">Log out</button>
+  </div>
+  <div *ngFor="let vote of votes; let i = index">
+    <span>
+      <h4>{{i+1}} {{vote.candidateName}}   Total votes are {{vote.count}}</h4>
+    </span>
+  </div>
+</div>
